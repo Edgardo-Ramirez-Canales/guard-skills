@@ -158,15 +158,7 @@ Maintainer checks before publishing:
 npx skills add . --list --full-depth
 ```
 
-With SkillSpector installed:
-
-```bash
-for skill in skills/*; do
-  skillspector scan "$skill" --no-llm
-done
-```
-
-When authoring with a local skill-creator validator, each skill is also checked with `quick_validate.py` before release.
+This lists every skill the CLI discovers by scanning `skills/`, with its references, so you can confirm structure and discovery before publishing.
 
 ## License
 
